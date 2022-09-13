@@ -10,5 +10,10 @@ def main():
     print(f"::set-output name=myOutput::{my_output}")
 
 
+def E111():
+  pass
+
+# Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+
 if __name__ == "__main__":
     main()
