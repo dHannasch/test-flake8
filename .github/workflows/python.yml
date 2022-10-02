@@ -17,6 +17,22 @@ jobs:
           pip install 'flake8==5.0.0'
           flake8 main.py
 
+  lintwithlatest:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v1
+        with:
+          python-version: "3.10"
+
+      - uses: actions/checkout@v1
+
+      - name: Lint
+        run: |
+          pip install flake8
+          flake8 main.py
+
   lintwithprevversion:
     name: Lint
     runs-on: ubuntu-latest
