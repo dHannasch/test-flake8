@@ -32,6 +32,7 @@ jobs:
         run: |
           pip install flake8
           flake8 --bug-report
+          flake8 main.py --verbose
           flake8 main.py
 
   lintwithprevversion:
